@@ -1,36 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise</title>
+    <title>Card</title>
     <style>
-        div p:first-child {
-            background-color: yellow;
-            color: red;
+        * {
+            margin: 0;
+            padding: 0;
         }
 
-        p { 
-            background-color: blue;
-            color: white;
+        body {
+            background-color: bisque;
+            padding: 35px;
         }
-        
-        
+
+        .card {
+            background-color: white;
+            width: 160px;
+            height: 364px;
+            border-radius: 9px;
+        }
+
+        .image {
+            padding: 5px;
+        }
+
+        .image>img {
+            border-radius: 9px;
+        }
+
+        .content>p {
+            font-size: 12px;
+            color: grey;
+        }
+
+        .content {
+            padding: 12px 10px;
+        }
+
+        .capsules>span {
+            border: 1.5px solid rgb(224, 217, 217);
+            padding: 1px 6px;
+            border-radius: 9px;
+            font-size: 12px;
+        }
+
+        .capsules {
+            padding: 1px 15px;
+        }
+
+        .button {
+            text-align: center;
+        }
+
+        .button>button {
+            padding: 9px 13px;
+            margin: 3px;
+            background-color: rgb(195, 228, 241);
+            color: rgb(94, 94, 220);
+            border-radius: 18px;
+            border: none;
+            font-size: 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .button button:hover {
+            background-color: rgb(113, 121, 119);
+            color: rgb(246, 246, 245);
+        }
     </style>
 </head>
+
 <body>
-    <!-- Write html and css code to style a paragraph inside a div which contains 5 other paragraphs. The first paragraph must have background color yellow and text color red. The other paragraphs must have background color blue and text color white. The HMTL is written below for your reference. Do not change this html -->
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita explicabo consectetur dicta fuga ea at vitae suscipit, repellendus illum deleniti laboriosam ipsa distinctio.</p>
-        <p>I am another para</p>
-        <p>I am also another para</p>
-        
-        
-    </div>
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita explicabo consectetur dicta fuga ea at vitae suscipit, repellendus illum deleniti laboriosam ipsa distinctio.</p>
-        <p>I am another para</p>
-        <p>I am also another para</p>
+    <div class="card">
+        <div class="image">
+            <img width="150px"
+                src="https://www.shutterstock.com/shutterstock/photos/176455310/display_1500/stock-photo-traditional-boats-in-laos-176455310.jpg"
+                alt="">
+        </div>
+        <div class="capsules">
+            <span>Lake</span>
+            <span>Nature</span>
+        </div>
+        <div class="content">
+            <h2>Adventure</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo doloribus laborum temporibus nulla sapiente animi voluptates harum ea corporis neque!</p>
+        </div>
+        <div class="button">
+            <button>Read More</button>
+        </div>
+
     </div>
 </body>
+
 </html>
